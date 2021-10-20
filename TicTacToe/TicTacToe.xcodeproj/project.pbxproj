@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5509F91C26C1B92D00A42F43 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5509F91B26C1B92D00A42F43 /* GameViewModel.swift */; };
+		5509F91E26C1BBE700A42F43 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5509F91D26C1BBE700A42F43 /* Model.swift */; };
+		5509F92126C1C93000A42F43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5509F92026C1C93000A42F43 /* User.swift */; };
+		55497CD926CD86C20093ABC7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 55497CD826CD86C20093ABC7 /* FirebaseFirestore */; };
+		55497CDB26CD86C20093ABC7 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 55497CDA26CD86C20093ABC7 /* FirebaseFirestoreSwift-Beta */; };
+		55497CDD26CD87830093ABC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55497CDC26CD87830093ABC7 /* GoogleService-Info.plist */; };
+		55497CDF26CD8B6C0093ABC7 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55497CDE26CD8B6C0093ABC7 /* FirebaseReference.swift */; };
+		55497CE226CD8C580093ABC7 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55497CE126CD8C580093ABC7 /* FirebaseService.swift */; };
+		55497CE426CDA8360093ABC7 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55497CE326CDA8360093ABC7 /* AlertItem.swift */; };
+		559029CB26BF120A00B2F665 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559029CA26BF120A00B2F665 /* TicTacToeApp.swift */; };
+		559029CD26BF120A00B2F665 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559029CC26BF120A00B2F665 /* HomeView.swift */; };
+		559029CF26BF120C00B2F665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559029CE26BF120C00B2F665 /* Assets.xcassets */; };
+		559029D226BF120C00B2F665 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559029D126BF120C00B2F665 /* Preview Assets.xcassets */; };
+		559029D926BF144800B2F665 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559029D826BF144800B2F665 /* GameView.swift */; };
+		559029DB26BF151200B2F665 /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559029DA26BF151200B2F665 /* GameButton.swift */; };
+		559029DD26BF15CB00B2F665 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559029DC26BF15CB00B2F665 /* HomeViewModel.swift */; };
+		559029E326BF1BB000B2F665 /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559029E226BF1BB000B2F665 /* GameSquareView.swift */; };
+		559029E526BF1C0B00B2F665 /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559029E426BF1C0B00B2F665 /* PlayerIndicatorView.swift */; };
+		55F00DC626CEEE9E004CF954 /* GameNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F00DC526CEEE9E004CF954 /* GameNotifications.swift */; };
+		55FDC44C26BF1F8F00D2AE29 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDC44B26BF1F8F00D2AE29 /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5509F91B26C1B92D00A42F43 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5509F91D26C1BBE700A42F43 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5509F92026C1C93000A42F43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		55497CDC26CD87830093ABC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55497CDE26CD8B6C0093ABC7 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		55497CE126CD8C580093ABC7 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		55497CE326CDA8360093ABC7 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		559029C726BF120A00B2F665 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		559029CA26BF120A00B2F665 /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
+		559029CC26BF120A00B2F665 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		559029CE26BF120C00B2F665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559029D126BF120C00B2F665 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		559029D826BF144800B2F665 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		559029DA26BF151200B2F665 /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		559029DC26BF15CB00B2F665 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		559029E226BF1BB000B2F665 /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
+		559029E426BF1C0B00B2F665 /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicatorView.swift; sourceTree = "<group>"; };
+		55F00DC526CEEE9E004CF954 /* GameNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNotifications.swift; sourceTree = "<group>"; };
+		55FDC44B26BF1F8F00D2AE29 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		559029C426BF120A00B2F665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55497CD926CD86C20093ABC7 /* FirebaseFirestore in Frameworks */,
+				55497CDB26CD86C20093ABC7 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5509F91F26C1BBED00A42F43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5509F91D26C1BBE700A42F43 /* Model.swift */,
+				5509F92026C1C93000A42F43 /* User.swift */,
+				55497CE326CDA8360093ABC7 /* AlertItem.swift */,
+				55F00DC526CEEE9E004CF954 /* GameNotifications.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55497CE026CD8B730093ABC7 /* FirebaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				55497CDE26CD8B6C0093ABC7 /* FirebaseReference.swift */,
+				55497CE126CD8C580093ABC7 /* FirebaseService.swift */,
+			);
+			path = FirebaseHelpers;
+			sourceTree = "<group>";
+		};
+		559029BE26BF120A00B2F665 = {
+			isa = PBXGroup;
+			children = (
+				559029C926BF120A00B2F665 /* TicTacToe */,
+				559029C826BF120A00B2F665 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		559029C826BF120A00B2F665 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				559029C726BF120A00B2F665 /* TicTacToe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		559029C926BF120A00B2F665 /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				559029CA26BF120A00B2F665 /* TicTacToeApp.swift */,
+				559029E026BF175700B2F665 /* Views */,
+				559029E126BF176100B2F665 /* SecondaryViews */,
+				55497CE026CD8B730093ABC7 /* FirebaseHelpers */,
+				5509F91F26C1BBED00A42F43 /* Model */,
+				55497CDC26CD87830093ABC7 /* GoogleService-Info.plist */,
+				559029CE26BF120C00B2F665 /* Assets.xcassets */,
+				559029D026BF120C00B2F665 /* Preview Content */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		559029D026BF120C00B2F665 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				559029D126BF120C00B2F665 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		559029DE26BF173E00B2F665 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				559029CC26BF120A00B2F665 /* HomeView.swift */,
+				559029DC26BF15CB00B2F665 /* HomeViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		559029DF26BF174900B2F665 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				559029D826BF144800B2F665 /* GameView.swift */,
+				5509F91B26C1B92D00A42F43 /* GameViewModel.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		559029E026BF175700B2F665 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				559029DE26BF173E00B2F665 /* HomeView */,
+				559029DF26BF174900B2F665 /* GameView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		559029E126BF176100B2F665 /* SecondaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				559029DA26BF151200B2F665 /* GameButton.swift */,
+				55FDC44B26BF1F8F00D2AE29 /* LoadingView.swift */,
+				559029E226BF1BB000B2F665 /* GameSquareView.swift */,
+				559029E426BF1C0B00B2F665 /* PlayerIndicatorView.swift */,
+			);
+			path = SecondaryViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		559029C626BF120A00B2F665 /* TicTacToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559029D526BF120C00B2F665 /* Build configuration list for PBXNativeTarget "TicTacToe" */;
+			buildPhases = (
+				559029C326BF120A00B2F665 /* Sources */,
+				559029C426BF120A00B2F665 /* Frameworks */,
+				559029C526BF120A00B2F665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicTacToe;
+			packageProductDependencies = (
+				55497CD826CD86C20093ABC7 /* FirebaseFirestore */,
+				55497CDA26CD86C20093ABC7 /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = TicTacToe;
+			productReference = 559029C726BF120A00B2F665 /* TicTacToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		559029BF26BF120A00B2F665 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					559029C626BF120A00B2F665 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 559029C226BF120A00B2F665 /* Build configuration list for PBXProject "TicTacToe" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 559029BE26BF120A00B2F665;
+			packageReferences = (
+				55497CD726CD86C20093ABC7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 559029C826BF120A00B2F665 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				559029C626BF120A00B2F665 /* TicTacToe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		559029C526BF120A00B2F665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559029D226BF120C00B2F665 /* Preview Assets.xcassets in Resources */,
+				55497CDD26CD87830093ABC7 /* GoogleService-Info.plist in Resources */,
+				559029CF26BF120C00B2F665 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		559029C326BF120A00B2F665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F00DC626CEEE9E004CF954 /* GameNotifications.swift in Sources */,
+				5509F91C26C1B92D00A42F43 /* GameViewModel.swift in Sources */,
+				559029CD26BF120A00B2F665 /* HomeView.swift in Sources */,
+				559029E526BF1C0B00B2F665 /* PlayerIndicatorView.swift in Sources */,
+				559029DB26BF151200B2F665 /* GameButton.swift in Sources */,
+				559029D926BF144800B2F665 /* GameView.swift in Sources */,
+				5509F91E26C1BBE700A42F43 /* Model.swift in Sources */,
+				559029E326BF1BB000B2F665 /* GameSquareView.swift in Sources */,
+				55497CE426CDA8360093ABC7 /* AlertItem.swift in Sources */,
+				55497CE226CD8C580093ABC7 /* FirebaseService.swift in Sources */,
+				55FDC44C26BF1F8F00D2AE29 /* LoadingView.swift in Sources */,
+				559029DD26BF15CB00B2F665 /* HomeViewModel.swift in Sources */,
+				559029CB26BF120A00B2F665 /* TicTacToeApp.swift in Sources */,
+				55497CDF26CD8B6C0093ABC7 /* FirebaseReference.swift in Sources */,
+				5509F92126C1C93000A42F43 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		559029D326BF120C00B2F665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		559029D426BF120C00B2F665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		559029D626BF120C00B2F665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TicTacToe/Preview Content\"";
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		559029D726BF120C00B2F665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TicTacToe/Preview Content\"";
+				DEVELOPMENT_TEAM = 7P6AJEE272;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevschool.TicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		559029C226BF120A00B2F665 /* Build configuration list for PBXProject "TicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559029D326BF120C00B2F665 /* Debug */,
+				559029D426BF120C00B2F665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559029D526BF120C00B2F665 /* Build configuration list for PBXNativeTarget "TicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559029D626BF120C00B2F665 /* Debug */,
+				559029D726BF120C00B2F665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55497CD726CD86C20093ABC7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55497CD826CD86C20093ABC7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55497CD726CD86C20093ABC7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		55497CDA26CD86C20093ABC7 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55497CD726CD86C20093ABC7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 559029BF26BF120A00B2F665 /* Project object */;
+}
